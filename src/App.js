@@ -28,25 +28,21 @@ const UserProfilePage = lazy(() =>
   import('./pages/user-profile/UserProfilePage')
 );
 
-const App = ({
-  browerMediaStream,
-  loginTokenAction,
-  updateAudioStreamAction,
-}) => {
+const App = ({ loginTokenAction }) => {
   const sourceRef = useRef(null);
   const audioRef = useRef(null);
   let history = useHistory();
   useEffect(() => {
-    // (async () => {
-    //   const userToken = localStorage.getItem('user');
-    //   const currentUrl = window.location.href;
-    //   const verify_account = currentUrl.includes('/account-verification/');
-    //   if (userToken) {
-    //     loginTokenAction(userToken);
-    //   } else {
-    //     history.push('/login');
-    //   }
-    // })();
+    (async () => {
+      const userToken = localStorage.getItem('user');
+      //const currentUrl = window.location.href;
+      //const verify_account = currentUrl.includes('/account-verification/');
+      if (userToken) {
+        loginTokenAction(userToken);
+      } else {
+        history.push('/login');
+      }
+    })();
   }, []);
 
   return (
@@ -97,13 +93,7 @@ const App = ({
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    browerMediaStream: state.call.stream,
-  };
-};
-
-export default connect(mapStateToProps, {
+export default connect(null, {
   loginTokenAction,
   updateAudioStreamAction,
 })(App);

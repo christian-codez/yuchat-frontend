@@ -14,7 +14,6 @@ import {
   updateTypingStoppedAction,
 } from '../../redux/actions/reaction.actions';
 import messageURL from '../../sounds/message_received2.mp3';
-import userTypingSound from '../../sounds/user_typing.mp3';
 import newNotificationSound from '../../sounds/stuffed-and-dropped.mp3';
 import { get_audio_permission } from '../../utils/api-settings';
 import { startIncomingCallAction } from '../../redux/actions/call.action';

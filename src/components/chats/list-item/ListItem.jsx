@@ -157,14 +157,6 @@ const ListItem = props => {
             <span className='username'>
               {user.firstname} {user.lastname}
             </span>
-            <span className='secondary-content message-time '>
-              {unreadMessages && unreadMessages.length > 0 && (
-                <span className='new badge green accent-4'>
-                  {unreadMessages.length}
-                </span>
-              )}
-              {GetTimeAgo(message.created_at, 'long')}
-            </span>
           </div>
           <p className='last-message'>
             {message.message_type === 'friend' ? (

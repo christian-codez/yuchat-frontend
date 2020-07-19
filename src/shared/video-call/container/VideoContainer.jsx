@@ -28,7 +28,6 @@ import { TURN_SERVER_CONFIG } from '../../../utils/general';
 import './video-container.style.css';
 import { streamIsValid, toggleModal } from '../../../utils/general';
 import { destroyPeer } from '../../../utils/api-settings';
-import CallTimer from '../timer/CallTimer';
 
 const VideoContainer = ({
   currentUser,
@@ -253,7 +252,6 @@ const VideoContainer = ({
         <VideoCaller />
         <VideoReceiver requestMessage={requestMessage} />
         <div className='floating-content'>
-          <CallTimer />
           <ActionButtons />
         </div>
         {incomingPeerStatus === 'closed' && (
