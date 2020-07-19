@@ -1,0 +1,19 @@
+.caller-video {
+    background-color: #0000ff54;
+    position: absolute;
+    right: 45px;
+    top: 22px;
+    height: 117px;
+    border: 3px solid #d2d2d2;
+    width: 153px;
+    z-index: 1000;
+}
+
+.caller-video-container {
+    position: relative;
+}
+
+.caller-video-container video {
+    position: absolute;
+    width: 147px;
+}

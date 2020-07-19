@@ -1,0 +1,63 @@
+.chat-panel__header {
+    background-color: #212121;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+span.user-info__last-seend {
+    text-align: left;
+    display: block;
+}
+
+span.user-typing {
+    display: block;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 20px;
+    color: #009906;
+    text-align: left;
+}
+
+.chat-panel__header_left {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Styling the header when it is displayed on mobile */
+div#chat-messages .modal-header .chat-panel__header_left {
+    text-align: justify;
+}
+
+div#chat-messages .chat-panel__header {
+    clear: both;
+    border-top: 2px solid #a6a6a6;
+}
+
+div#chat-messages .chat-panel__header {
+    clear: both;
+    border-top: 2px solid #a6a6a6;
+    background-color: #033a37;
+}
+
+.chat-panel__header_right i.friendzspot-icon {
+    font-size: 43px;
+}
+
+.fixed-action-btn.chat-header-action {
+    position: static;
+}
+
+.chat-panel__header_left .user-info {
+    margin-left: 20px;
+}
+
+span.user-info__username {
+    display: block;
+}
+
+.user-avater {
+    position: relative;
+}

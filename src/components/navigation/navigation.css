@@ -1,0 +1,79 @@
+nav.friendzspot-navigation {
+  padding: 0 15px;
+  background-color: #134b90;
+}
+
+nav.friendzspot-navigation li.user-account {
+  background-color: #134b90;
+  margin: 0 10px;
+}
+
+nav.friendzspot-navigation ul a {
+  font-size: 0.8rem;
+}
+
+ul.mobile-side-nav .user-view {
+  padding: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+ul.mobile-side-nav .user-profile-photo {
+  width: 264px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  top: 38px;
+  z-index: 1002;
+}
+
+ul.mobile-side-nav .background:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.sidenav.mobile-side-nav li a.active {
+  background-color: #003554;
+  color: #fff;
+}
+
+.friendzspot-navigation li a.active {
+  background-color: rgb(0, 53, 119);
+}
+
+nav .brand-logo {
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+nav .brand-logo img {
+  width: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .brand-logo {
+    left: 0;
+  }
+
+  .sidenav {
+    background-color: #092548;
+  }
+
+  .sidenav li>a {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 19px;
+  }
+
+  .sidenav li>a>i.material-icons {
+    color: rgba(255, 255, 255, 0.54);
+  }
+}

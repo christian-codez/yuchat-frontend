@@ -1,0 +1,39 @@
+.call-control {
+    margin: 8px;
+}
+
+.call-control {
+    opacity: 0.6;
+    background-color: #fff;
+}
+
+.btn.call-control i.friendzspot-icon.neutral {
+    color: #333 !important;
+}
+
+.call-control:hover i.friendzspot-icon.neutral {
+    color: #fff !important;
+}
+
+button.call-control.off.videocam {
+    background-color: #ff8f00;
+    opacity: 1;
+}
+
+button.call-control.off.videocam i.friendzspot-icon {
+    color: #fff !important;
+}
+
+button.call-control.off.mic {
+    background-color: #0277bd;
+    opacity: 1;
+}
+
+button.call-control.off.mic i.friendzspot-icon {
+    color: #fff !important;
+}
+
+.call-control:hover,
+.call-control:focus {
+    opacity: 1;
+}

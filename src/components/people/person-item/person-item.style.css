@@ -1,0 +1,63 @@
+.friend-request-record {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 20px 14px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+
+
+.friend-request-record__left-user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.friend-request-record__left {
+    display: flex;
+}
+
+span.friends-count {
+    display: flex;
+    align-items: end;
+}
+
+span.username {
+    display: block;
+    text-align: left;
+}
+
+.friend-request-record:not(:last-child) {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .friend-request-record {
+        flex-direction: column;
+    }
+
+    .friend-request-record__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .friend-request-record__left-user-info {
+
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    span.friends-count {
+
+        margin: 0 auto;
+    }
+
+    .friend-request-record__right {
+        margin-top: 15px;
+    }
+}

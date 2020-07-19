@@ -1,0 +1,31 @@
+span.badge.small {
+    min-width: 2rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #26a69a;
+    border-radius: 2px;
+}
+
+span.badge.primary {
+    background-color: #0277bd;
+}
+
+span.badge.warning {
+    background-color: #ff8f00;
+}
+
+span.badge.success {
+    background-color: #007a42
+}
+
+span.badge.danger {
+    background-color: #e50303
+}
+
+.circle-badge {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    border-radius: 50% !important;
+}

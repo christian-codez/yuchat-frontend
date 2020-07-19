@@ -1,0 +1,47 @@
+.notify {
+
+    padding: 21px 40px 18px 14px;
+    display: inline-block;
+    border-radius: 9px;
+    margin: 10px auto;
+}
+
+.notify .message {
+    margin-right: 16px;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 29px;
+    color: #fff;
+}
+
+.notify.primary {
+    background-color: #134b90;
+}
+
+.notify.success {
+    background-color: #05521e;
+}
+
+.notify.danger {
+    background-color: #e50303;
+}
+
+@media only screen and (max-width: 600px) {
+    .notify {
+
+        padding: 10px;
+        display: inline-block;
+        border-radius: 9px;
+        margin: 10px auto;
+    }
+
+    .notify .message {
+
+        font-size: 23px;
+
+    }
+
+    .notify .btn {
+        font-size: 11px;
+        outline: 0;
+    }
+}

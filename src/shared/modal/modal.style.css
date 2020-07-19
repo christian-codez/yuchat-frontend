@@ -1,0 +1,36 @@
+div#chat-messages {
+    max-height: 100%;
+    height: 100%;
+}
+
+div#chat-messages .modal-content {
+    padding: 0;
+}
+
+div#chat-messages .modal-header {
+    position: absolute;
+    top: 0px;
+    height: 56px;
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 0;
+    height: 56px;
+    width: 100%;
+    text-align: right;
+    background-color: #131519;
+    z-index: 1009;
+}
+
+div#chat-messages .modal .modal-content {
+    padding: 1px;
+}
+
+div#chat-messages .modal-footer {
+    position: fixed;
+    bottom: 22px;
+    padding: 0;
+}
+
+div#chat-messages .modal-header .close-button {
+    color: #fff;
+}

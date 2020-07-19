@@ -1,0 +1,47 @@
+section.not-found-section {
+    height: 74.5vh;
+    background-color: white;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+
+section.not-found-section .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 650px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.not-found-container {
+    background-color: #fff;
+    width: 100%;
+    height: 79vh;
+}
+
+h4.not-found-section__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 49px;
+    margin: 0;
+    color: #b30c0c;
+}
+
+p.not-found-section__sub-text {
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+    section.not-found-section .content {
+        width: 290px;
+    }
+}

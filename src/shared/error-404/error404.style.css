@@ -1,0 +1,51 @@
+section.error-page {
+    height: 85vh;
+    background-color: #010912;
+    position: relative;
+}
+
+.main {
+    text-align: center;
+    z-index: 5;
+}
+
+.error-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    text-align: center;
+    top: 38px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+p.error-message {
+    font-size: 22px;
+    margin-top: 0;
+    color: #fff;
+}
+
+h1.error-title {
+    color: #fff;
+    font-size: 95px;
+    margin: 0;
+}
+
+a.button {
+    background: linear-gradient(#ff9c00, #ff9c00);
+    padding: 15px 47px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 30px 15px rgba(0, 0, 0, 0.15);
+    outline: none;
+    color: #FFF;
+    font: 400 16px/2.5 Nunito, 'Varela Round', Sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}

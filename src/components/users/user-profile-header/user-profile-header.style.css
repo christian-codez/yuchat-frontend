@@ -1,0 +1,27 @@
+.user-profile__header {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 33px 15px;
+    width: 90%;
+    margin: -17px auto 0 auto;
+    background-color: #fff;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.user-profile__header h2 {
+    margin-top: 55px;
+    font-size: 30px;
+}
+
+.user-profile__header p {
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .user-profile__header h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}

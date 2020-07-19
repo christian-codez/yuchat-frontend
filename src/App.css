@@ -1,0 +1,25 @@
+ .user-listing ul.collection {
+   margin: 0;
+ }
+
+ .container.u-chat-container {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   max-width: 1570px;
+ }
+
+ @media only screen and (max-width: 600px) {
+   .container.u-chat-container {
+     margin: 0 auto;
+     max-width: 1280px;
+     width: 100%;
+   }
+ }
+
+ /* Tablet media query */
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+   .container {
+     width: 98%;
+   }
+ }

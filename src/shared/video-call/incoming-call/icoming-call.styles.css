@@ -1,0 +1,58 @@
+div#incoming-call-alert {
+    width: 31%;
+}
+
+section.incoming-call-alert-section {
+    text-align: center;
+}
+
+.incoming-call-alert-section-image .circle {
+    margin: 0 auto;
+}
+
+div#incoming-call-alert .modal-footer {
+    display: none;
+}
+
+div#incoming-call-alert .modal-header {
+    display: none;
+}
+
+.incoming-call-alert-section-buttons {
+    padding-top: 19px;
+    padding-bottom: 10px;
+}
+
+.incoming-call-alert-section-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.incoming-call-alert-section-title:after {
+    content: "";
+    height: 5px;
+    background-color: black;
+    display: block;
+    width: 9%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.incoming-call-alert-section-image {
+    margin: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    div#incoming-call-alert {
+        width: 90%;
+    }
+
+    .incoming-call-alert-section-title {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 19px;
+    }
+}

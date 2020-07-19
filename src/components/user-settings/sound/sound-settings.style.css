@@ -1,0 +1,9 @@
+section.settings-section {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 17px 20px;
+}
+
+.settings-section .settings-item {
+    padding: 11px 1px;
+}

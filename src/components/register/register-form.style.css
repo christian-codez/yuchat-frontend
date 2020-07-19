@@ -1,0 +1,5 @@
+p.auth-error-message {
+    color: red;
+    border: 2px solid red;
+    padding: 10px;
+}

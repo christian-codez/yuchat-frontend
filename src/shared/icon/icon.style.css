@@ -1,0 +1,29 @@
+i.friendzspot-icon {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+i.friendzspot-icon.primary {
+
+    color: #0277bd;
+}
+
+i.friendzspot-icon.success {
+
+    color: #007a42;
+}
+
+i.friendzspot-icon.danger {
+
+    color: #e50303;
+}
+
+i.friendzspot-icon.warning {
+
+    color: #ef6c00;
+}
+
+i.friendzspot-icon.neutral {
+
+    color: #fff !important;
+}

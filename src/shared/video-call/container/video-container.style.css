@@ -1,0 +1,85 @@
+section.video-convo-container {
+    background-color: red;
+    height: 404px;
+    position: relative;
+}
+
+section.video-convo-container .modal.modal-fixed-footer .modal-footer {
+    border-top: 5px solid rgb(229, 3, 3);
+
+}
+
+div#video-id.call-modal {
+    width: 400px;
+    height: 407px;
+    background-color: transparent;
+    overflow-y: auto;
+}
+
+div#video-id.call-modal .modal.modal-fixed-footer {
+    padding: 0;
+    height: 537px;
+}
+
+div#video-id.call-modal .modal-content {
+    padding: 0;
+    overflow: hidden;
+}
+
+div#video-id.call-modal .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #333333;
+}
+
+div#video-id.call-modal .modal-close-container {
+
+    flex-basis: 10%;
+}
+
+.call-ended {
+    position: absolute;
+    top: 108px;
+    color: #fff;
+    font-size: 30px;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.floating-content {
+    position: absolute;
+    bottom: 88px;
+    width: 200px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#video-id.call-modal .modal-footer {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    div#video-id.call-modal {
+        width: 355px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    div#video-id.call-modal {
+        width: 305px;
+        overflow-y: auto;
+    }
+}

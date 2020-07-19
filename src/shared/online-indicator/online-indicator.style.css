@@ -1,0 +1,23 @@
+ span.online-icon {
+     position: absolute;
+     height: 15px;
+     width: 15px;
+     background-color: #009906;
+     border-radius: 50%;
+     display: inline-block;
+     right: 2px;
+     top: 1px;
+     border: 2px solid #fff;
+ }
+
+ span.offline-icon {
+     position: absolute;
+     height: 15px;
+     width: 15px;
+     background-color: #e8ae00;
+     border-radius: 50%;
+     display: inline-block;
+     right: 2px;
+     top: 1px;
+     border: 2px solid #fff;
+ }

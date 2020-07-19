@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Montserrat:wght@700;800;900&family=Tenali+Ramakrishna&family=PT+Sans&family=Tenali+Ramakrishna&Baloo+Paaji+2&display=swap');
+
+div#root {
+  position: relative;
+}
+
+.friend-item .name {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 20px;
+  text-align: left;
+}
+
+.friend-item .sub-text {
+  text-align: left;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+
+}
+
+.circle-img.online {
+  border: 3px solid #009906;
+}
+
+.circle-img.offline {
+  border: 3px solid #f6cb4a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e6e6e6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(163, 163, 163);
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #664160;
+  background-color: #e50303d1;
+}
+
+
+
+/* UTILITY CLASSES */
+.p-0 {
+  padding: 0 !important;
+}
+
+.mb-2 {
+  margin-bottom: 10px !important;
+}

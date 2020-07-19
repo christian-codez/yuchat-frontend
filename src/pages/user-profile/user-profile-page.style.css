@@ -1,0 +1,30 @@
+ .stat-collections {
+     padding: 20px 6px;
+     background-color: white;
+     border: 1px solid #e8e8e8;
+     border-radius: 6px;
+ }
+
+ .user-update-form {
+     background-color: #fff;
+     padding: 1px 15px 30px 15px;
+     border-radius: 6px;
+ }
+
+ .sub-heading {
+     font-size: 26px;
+     text-transform: uppercase;
+     font-weight: 600;
+ }
+
+ ul#tabs {
+     border-bottom: 5px solid #e6e6e6;
+ }
+
+ @media only screen and (max-width:600px) {
+     .sub-heading {
+         font-size: 20px;
+         text-transform: uppercase;
+         font-weight: 600;
+     }
+ }

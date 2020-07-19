@@ -1,0 +1,28 @@
+.divider {
+    overflow: hidden;
+    margin-bottom: 21px;
+}
+
+.divider.small {
+    height: 1px;
+}
+
+.divider.medium {
+    height: 2px;
+}
+
+.divider.large {
+    height: 3px;
+}
+
+.divider.primary {
+    background-color: #004db1;
+}
+
+.divider.success {
+    background-color: #007a42;
+}
+
+.divider.danger {
+    background-color: #e50303;
+}

@@ -1,0 +1,120 @@
+ i.material-icons.attach-files {
+     color: #9a9a9a;
+     font-size: 38px;
+     font-weight: 500;
+     cursor: pointer;
+     flex-basis: 10%;
+ }
+
+ .input-field .submit-btn.prefix {
+     position: absolute;
+     width: 8rem;
+     font-size: 15px;
+     transition: color .2s;
+     top: .5rem;
+ }
+
+ .submit-text-box {
+     z-index: 1000;
+     background-color: #fff;
+ }
+
+ .message-box {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     position: relative;
+     padding: 10px;
+ }
+
+ p.message-status {
+     margin: 5px 0 11px 0;
+     color: red;
+     font-weight: 500;
+ }
+
+ textarea#message {
+
+     width: 80%;
+     resize: none;
+     flex-basis: 100%;
+     font-size: 15px;
+     font-family: 'Montserrat', sans-serif;
+     height: 53px;
+     overflow-x: hidden;
+     padding: 15px;
+     margin-left: 10px;
+ }
+
+ textarea#message:focus {
+     background: #212121;
+     color: #fff;
+     border-radius: 0px;
+ }
+
+ textarea#message::-webkit-input-placeholder {
+     font-size: 15px;
+     vertical-align: middle;
+
+ }
+
+ textarea#message::-moz-placeholder {
+     font-size: 15px;
+     vertical-align: middle;
+
+ }
+
+ textarea#message:-ms-input-placeholder {
+     font-size: 15px;
+     vertical-align: middle;
+
+ }
+
+ textarea#message::-ms-input-placeholder {
+     font-size: 15px;
+     vertical-align: middle;
+
+ }
+
+ textarea#message::placeholder {
+     font-size: 15px;
+     vertical-align: middle;
+
+ }
+
+
+
+ .send-btn {
+     flex-basis: 10%;
+     cursor: pointer;
+     color: #fff;
+     font-size: 19px;
+     transition: all 0.75s;
+     font-weight: bolder;
+     margin-right: 10px;
+     background-color: #b30c0c;
+     height: 53px;
+     line-height: 53px;
+     text-align: center;
+     overflow: inherit;
+     padding: 0 10px;
+ }
+
+
+ @media only screen and (max-width: 600px) {
+     textarea#message {
+         width: 340px;
+     }
+
+     .submit-text-box {
+
+         height: 14vh;
+     }
+ }
+
+
+ @media only screen and (max-width: 375px) {
+     textarea#message {
+         width: 284px;
+     }
+ }

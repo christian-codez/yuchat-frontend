@@ -1,0 +1,125 @@
+.friend-item {
+    background-color: white;
+    margin-top: 6px;
+    padding: 17px 5px;
+    width: 49.8%;
+    border: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend-item__right__action-buttons {
+    flex-basis: 40%;
+}
+
+.friend-item__right__user-info {
+    flex-basis: 55%;
+}
+
+img.user-avater {
+    width: 130px;
+    height: 130px;
+    border: 1px solid whitesmoke;
+}
+
+.friend-item__right {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 18px;
+}
+
+p.start-chatting span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p.start-chatting,
+p.start-chatting i {
+    transition: all 1s;
+    text-align: left;
+}
+
+p.start-chatting:hover {
+    color: red;
+    cursor: pointer;
+}
+
+p.start-chatting:hover i {
+    color: red;
+}
+
+p.start-chatting:hover i {
+    color: #134b90 !important;
+}
+
+.block_friend_btn {
+    margin-top: 23px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .friend-item {
+        background-color: white;
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+        border: 1px solid #e2e2e2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .friend-item .name {
+        text-align: center;
+    }
+
+    .friend-item__right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .friend-item__left {
+        align-self: center;
+        display: flex;
+    }
+
+    .friend-item__right__action-buttons {
+        text-align: center;
+    }
+
+    .block_friend_btn {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .friend-item__right__user-info {
+        margin-bottom: 19px;
+    }
+}
+
+/* Smaller Device */
+@media only screen and (max-width: 330px) {
+    .block_friend_btn {
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+}
+
+
+/* Tablet media query */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .friend-item {
+        width: 100%;
+    }
+}

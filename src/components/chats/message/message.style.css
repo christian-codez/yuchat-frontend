@@ -1,0 +1,141 @@
+.owner .chat-msg-text {
+    background-color: rgb(19 75 144);
+    color: #fff;
+    width: 376px;
+    border-radius: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.owner.deleted .chat-msg-text {
+    background-color: #8d8d8d;
+    color: #b5b5b5;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.deleted .chat-msg-text {
+    background-color: #8d8d8d;
+    color: #b5b5b5;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+
+.chat-msg-text {
+    background-color: #033a37;
+    color: #fff;
+    width: 376px;
+    padding: 15px 8px 8px 10px;
+    border-radius: 20px 20px 20px 0;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 500;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+.message-meta.friend {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 8px 0 8px 0;
+    font-size: 16px;
+}
+
+.message-header i {
+    cursor: pointer;
+}
+
+.chat-msg.owner {
+    flex-direction: row-reverse;
+}
+
+
+/* Mobile styling */
+
+
+div#chat-messages .owner .chat-msg-text,
+div#chat-messages .chat-msg-text {
+
+    width: 252px;
+
+}
+
+span.sender-name {
+    opacity: 0.8;
+    margin-left: 5px;
+}
+
+.message-more-actions {
+    display: none;
+}
+
+
+.chat-msg-content:hover .message-more-actions {
+    display: block;
+}
+
+.chat-msg {
+    display: flex;
+    flex-direction: row;
+    padding: 13px 0;
+    margin: 0 10px;
+}
+
+small.chat-msg-date {
+    display: block;
+    border-top: 1px solid #ffffff63;
+    padding-top: 7px;
+}
+
+
+small.message-time {
+    opacity: 0.5;
+}
+
+
+
+.chat-msg-text span.message-content {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.call-message {
+    background-color: #8d4e00;
+    margin: 7px auto;
+    border-radius: 8px;
+    padding: 5px;
+    color: #fff;
+    display: inline-block;
+}
+
+span.call-leading-text {
+    margin: 3px;
+}
+
+@media only screen and (max-width: 325px) {
+
+    div#chat-messages .owner .chat-msg-text,
+    div#chat-messages .chat-msg-text {
+
+        width: 300px;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .call-message {
+        font-size: 10px;
+    }
+}

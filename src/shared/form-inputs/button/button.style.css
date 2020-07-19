@@ -1,0 +1,37 @@
+.btn-primary {
+    background-color: #0277bd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #1565c0;
+}
+
+.btn-success {
+    background-color: #007a42;
+
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #00695c;
+
+}
+
+.btn-danger {
+    background-color: #e50303;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: #c62828;
+}
+
+.btn-warning {
+    background-color: #ff8f00;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+    background-color: #ef6c00;
+}
