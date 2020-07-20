@@ -303,12 +303,26 @@ export const updateProfilePhotoAction = data => {
           payload: response.data,
         });
       }
-    } catch (e) {
-      dispatch({ type: api_loader_action.USER_PROFILE_PHOTO_UPDATE_ERROR });
-      console.log(e);
+    } catch (error) {
+      dispatch({
+        type: api_loader_action.USER_PROFILE_PHOTO_UPDATE_ERROR,
+        payload: error.response
+          ? error.response.data
+          : 'Profile photo could not be uploaded',
+      });
     }
   };
 };
+export const clearProfileUpdateErrorAction = () => {
+  return async dispatch => {
+    try {
+      dispatch({
+        type: api_loader_action.CLEAR_USER_PROFILE_PHOTO_UPDATE_ERROR,
+      });
+    } catch (error) {}
+  };
+};
+
 export const updateCoverPhotoAction = data => {
   return async dispatch => {
     try {
@@ -323,8 +337,13 @@ export const updateCoverPhotoAction = data => {
           payload: response.data,
         });
       }
-    } catch (e) {
-      console.log(e);
+    } catch (error) {
+      dispatch({
+        type: api_loader_action.USER_PROFILE_PHOTO_UPDATE_ERROR,
+        payload: error.response
+          ? error.response.data
+          : 'Cover photo could not be uploaded',
+      });
     }
   };
 };

@@ -4,6 +4,11 @@
     cursor: pointer;
 }
 
+p.profile-update-error {
+    color: #ff0007;
+    font-size: 18px;
+}
+
 .center-absolute {
     width: 200px;
     left: 0;

@@ -18,6 +18,7 @@ import newNotificationSound from '../../sounds/stuffed-and-dropped.mp3';
 import { get_audio_permission } from '../../utils/api-settings';
 import { startIncomingCallAction } from '../../redux/actions/call.action';
 import M from 'materialize-css';
+import { toastMessage } from '../toast-message/ToastMessage';
 
 const SocketObservers = props => {
   const {
@@ -68,7 +69,7 @@ const SocketObservers = props => {
       });
 
       socket.on('notification', message => {
-        M.toast({ html: message });
+        toastMessage(message);
         audioRef.current.src = newNotificationSound;
         audioRef.current.volume = 0.5;
         audioRef.current.play();

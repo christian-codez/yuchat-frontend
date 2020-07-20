@@ -89,7 +89,6 @@ export default (state = INITIAL_STATE, action) => {
         ...state,
         sentMessages: state.sentMessages.map(message => {
           if (message.id === action.payload.messageId) {
-            console.log(message);
             return {
               ...message,
               deletedStatus: true,

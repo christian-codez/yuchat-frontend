@@ -1,14 +1,20 @@
 import React, { Fragment, useRef, useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import RequestLoading from '../../../shared/request-loading/RequestLoading';
-import { updateProfilePhotoAction } from '../../../redux/actions/user.actions';
+import {
+  updateProfilePhotoAction,
+  clearProfileUpdateErrorAction,
+} from '../../../redux/actions/user.actions';
 import { CHAT_API_URL } from '../../../utils/api-settings';
 import Icon from '../../../shared/icon/Icon';
 import './profile-photo.style.css';
+import { toastMessage } from '../../../shared/toast-message/ToastMessage';
 const ProfilePhoto = ({
   currentUser,
   profilePhotoUpdating,
+  profilePhotoUpdatingError,
   updateProfilePhotoAction,
+  clearProfileUpdateErrorAction,
 }) => {
   const [imageFile, setImageFile] = useState('');
   const [imageFileURL, setImageFileURL] = useState('');
@@ -23,6 +29,15 @@ const ProfilePhoto = ({
       setImageFileURL(currentUser.profilePhotoURL);
     }
   }, [currentUser]);
+
+  useEffect(() => {
+    if (profilePhotoUpdatingError) {
+      toastMessage(profilePhotoUpdatingError);
+      setTimeout(() => {
+        clearProfileUpdateErrorAction();
+      }, 5000);
+    }
+  }, [profilePhotoUpdatingError, clearProfileUpdateErrorAction]);
 
   const handleImageUpload = event => {
     if (event.target.files.length === 1) {
@@ -56,7 +71,6 @@ const ProfilePhoto = ({
     const formData = new FormData();
     formData.append('profile_photo_file', imageFile);
     await updateProfilePhotoAction(formData);
-    // setTempImageFileURL('');
     setImageFile('');
   };
 
@@ -123,7 +137,7 @@ const ProfilePhoto = ({
             style={{
               height: '200px',
               width: '200px',
-              border: ' 6px solid rgb(226, 226, 226)',
+              border: '4px solid rgb(226, 226, 226)',
               backgroundImage: `url(${getProfileImageURL()})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
@@ -142,9 +156,11 @@ const mapStateToProps = state => {
   return {
     currentUser: state.auth.currentUser,
     profilePhotoUpdating: state.api.profilePhotoUpdating,
+    profilePhotoUpdatingError: state.api.profilePhotoUpdatingError,
   };
 };
 
 export default connect(mapStateToProps, {
   updateProfilePhotoAction,
+  clearProfileUpdateErrorAction,
 })(ProfilePhoto);

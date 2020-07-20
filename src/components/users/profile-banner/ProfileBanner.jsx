@@ -5,10 +5,19 @@ import Button from '../../../shared/form-inputs/button/Button';
 import { CHAT_API_URL } from '../../../utils/api-settings';
 import RequestLoading from '../../../shared/request-loading/RequestLoading';
 import DefaultCoverImage from '../../../images/default-cover-photo.jpg';
-import { updateCoverPhotoAction } from '../../../redux/actions/user.actions';
+import {
+  updateCoverPhotoAction,
+  clearProfileUpdateErrorAction,
+} from '../../../redux/actions/user.actions';
 import './profile-banner.style.css';
+import { toastMessage } from '../../../shared/toast-message/ToastMessage';
 
-const ProfileBanner = ({ currentUser, updateCoverPhotoAction }) => {
+const ProfileBanner = ({
+  currentUser,
+  profilePhotoUpdatingError,
+  updateCoverPhotoAction,
+  clearProfileUpdateErrorAction,
+}) => {
   const [coverImageTempFileURL, setCoverImageTempFileURL] = useState(''); //stores selected file from the dialogue
   const [coverImageFile, setCoverImageFile] = useState(''); //store the form formatted file
   const [coverImageFileURL, setCoverImageFileURL] = useState(''); //stores the file url from the api request
@@ -23,6 +32,15 @@ const ProfileBanner = ({ currentUser, updateCoverPhotoAction }) => {
       setCoverImageFileURL(currentUser.coverPhotoURL);
     }
   }, [currentUser]);
+
+  useEffect(() => {
+    if (profilePhotoUpdatingError) {
+      toastMessage(profilePhotoUpdatingError);
+      setTimeout(() => {
+        clearProfileUpdateErrorAction();
+      }, 5000);
+    }
+  }, [profilePhotoUpdatingError, clearProfileUpdateErrorAction]);
 
   const handleCoverImageUpload = event => {
     if (event.target.files.length === 1) {
@@ -142,9 +160,11 @@ const ProfileBanner = ({ currentUser, updateCoverPhotoAction }) => {
 const mapStateToProps = state => {
   return {
     currentUser: state.auth.currentUser,
+    profilePhotoUpdatingError: state.auth.profilePhotoUpdatingError,
   };
 };
 
 export default connect(mapStateToProps, {
   updateCoverPhotoAction,
+  clearProfileUpdateErrorAction,
 })(ProfileBanner);

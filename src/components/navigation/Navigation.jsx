@@ -25,8 +25,8 @@ const Navigation = ({
       getMyFriendsAction();
     }
 
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, { edge: 'left' });
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, { edge: 'left' });
   }, [currentUser]);
 
   const authLogout = () => {
@@ -34,6 +34,7 @@ const Navigation = ({
       const userId = currentUser._id || currentUser.id;
       logoutAction(currentUser.id);
       history.push('/login');
+      window.location.reload();
     }
   };
 
@@ -131,7 +132,7 @@ const Navigation = ({
                 </div>
               </div>
             </li>
-            <li>
+            <li className='mobile-menu-item'>
               <NavLink to='/messenger'>
                 <Icon color='#fff' className='left' icon='question_answer' />{' '}
                 Messenger{' '}
@@ -141,19 +142,19 @@ const Navigation = ({
                 />
               </NavLink>
             </li>
-            <li>
+            <li className='mobile-menu-item'>
               <NavLink to='/friends'>
                 <Icon color='#fff' className='left' icon='people' /> Friends
                 <Badge color='danger' count={friends ? friends.length : 0} />
               </NavLink>
             </li>{' '}
-            <li>
+            <li className='mobile-menu-item'>
               <NavLink to='/people'>
                 <Icon color='#fff' className='left' icon='public' /> People
               </NavLink>
             </li>{' '}
             {currentUser && (
-              <li>
+              <li className='mobile-menu-item'>
                 <NavLink to='/me'>
                   Account
                   <Icon color='#fff' className='left' icon='account_circle' />
@@ -161,13 +162,16 @@ const Navigation = ({
               </li>
             )}
             {currentUser ? (
-              <li style={{ cursor: 'pointer' }} onClick={authLogout}>
+              <li
+                className='mobile-menu-item'
+                style={{ cursor: 'pointer' }}
+                onClick={authLogout}>
                 <a>
                   <Icon color='#fff' className='left' icon='all_out' /> Logout
                 </a>
               </li>
             ) : (
-              <li>
+              <li className='mobile-menu-item'>
                 <NavLink to='/login'>Login</NavLink>
               </li>
             )}

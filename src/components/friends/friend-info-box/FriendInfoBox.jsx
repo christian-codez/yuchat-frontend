@@ -46,47 +46,41 @@ const FriendInfoBox = props => {
 
     if (answer) {
       setunfriendRequest(true);
-      setTimeout(() => {
-        unfriendFriendAction(friend);
-        setunfriendRequest(false);
-      }, 5000);
+
+      unfriendFriendAction(friend);
+      setunfriendRequest(false);
     }
   };
 
   const unblockFriend = () => {
     console.log('UnBlock user');
     setunblockRequest(true);
-    setTimeout(() => {
-      unblockFriendAction(friend.id);
-      setunblockRequest(false);
-    }, 5000);
+
+    unblockFriendAction(friend.id);
+    setunblockRequest(false);
   };
 
   const blockFriend = () => {
     console.log('Block user');
     setblockRequest(true);
-    setTimeout(() => {
-      blockFriendAction(friend.id);
-      setblockRequest(false);
-    }, 5000);
+
+    blockFriendAction(friend.id);
+    setblockRequest(false);
   };
 
   const cancelFriendRequest = () => {
     setcancelRequest(true);
-    setTimeout(() => {
-      removePendingFriendRequestAction(id);
-      setcancelRequest(false);
-    }, 5000);
+
+    removePendingFriendRequestAction(id);
+    setcancelRequest(false);
   };
 
   const acceptFriendRequest = () => {
     setAcceptRequest(true);
     setDeclineFriendRequest(true);
-    setTimeout(() => {
-      acceptFriendRequestAction(friend.id);
-      setAcceptRequest(false);
-      setDeclineFriendRequest(false);
-    }, 5000);
+
+    acceptFriendRequestAction(friend.id);
+    setAcceptRequest(false);
   };
 
   const declineUnacceptedFriendRequest = () => {

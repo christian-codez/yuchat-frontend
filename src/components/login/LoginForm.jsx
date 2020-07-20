@@ -49,6 +49,7 @@ const LoginForm = ({
             id='email'
             onChange={handleInputChange}
             type='email'
+            required
             value={inputs.email}
             className='validate email'
           />
@@ -60,6 +61,7 @@ const LoginForm = ({
             id='password'
             onChange={handleInputChange}
             type='password'
+            required
             value={inputs.password}
             className='validate password'
           />

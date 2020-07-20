@@ -44,6 +44,7 @@ const RegisterForm = ({ signupError, resetErrorAction, registerAction }) => {
             id='firstname'
             onChange={handleInputChange}
             type='text'
+            required
             value={inputs.firstname}
             className='validate firstname'
           />
@@ -53,6 +54,7 @@ const RegisterForm = ({ signupError, resetErrorAction, registerAction }) => {
           <input
             placeholder='Enter your lastname'
             id='lastname'
+            required
             onChange={handleInputChange}
             type='text'
             value={inputs.lastname}
@@ -64,6 +66,7 @@ const RegisterForm = ({ signupError, resetErrorAction, registerAction }) => {
           <input
             placeholder='Enter your email'
             id='email'
+            required
             onChange={handleInputChange}
             type='email'
             value={inputs.email}
@@ -75,6 +78,7 @@ const RegisterForm = ({ signupError, resetErrorAction, registerAction }) => {
           <input
             placeholder='Enter your password'
             id='password'
+            required
             onChange={handleInputChange}
             type='password'
             value={inputs.password}

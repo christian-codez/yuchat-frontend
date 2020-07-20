@@ -94,8 +94,7 @@ export const logoutAction = id => {
   return async dispatch => {
     try {
       localStorage.removeItem('user');
-      // let response = await apiConfig.post(`/api/users/logout/${id}`);
-
+      //await apiConfig.post(`/api/users/logout/${id}`);
       dispatch({
         type: auth_actions.SIGNOUT_ACTION,
       });
