@@ -162,7 +162,9 @@ const VideoContainer = ({
 
       socket.on('receiverNotAvailable', message => {
         setRequestMessage(message);
-        endInitiatorCall(peer);
+        setTimeout(() => {
+          endInitiatorCall(peer);
+        }, 3000);
       });
 
       socket.on('callEnded', data => {

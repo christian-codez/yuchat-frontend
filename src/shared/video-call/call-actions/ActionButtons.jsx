@@ -56,7 +56,7 @@ const ActionButtons = ({
           name='unfriend-btn'
           color='btn-primary'
           buttonCallback={muteAudio}>
-          <Icon className='' icon='mic' color='neutral' size='21px' />
+          <Icon className='' icon='mic_off' color='neutral' size='21px' />
         </Button>
       );
     } else {
@@ -67,7 +67,7 @@ const ActionButtons = ({
           name='unfriend-btn'
           color='btn-primary'
           buttonCallback={muteAudio}>
-          <Icon className='' icon='mic_off' color='neutral' size='21px' />
+          <Icon className='' icon='mic' color='neutral' size='21px' />
         </Button>
       );
     }
@@ -82,7 +82,7 @@ const ActionButtons = ({
           name='unfriend-btn'
           color='btn-warning'
           buttonCallback={muteVideo}>
-          <Icon className='' icon='videocam' color='neutral' size='21px' />
+          <Icon className='' icon='videocam_off' color='neutral' size='21px' />
         </Button>
       );
     } else {
@@ -93,7 +93,7 @@ const ActionButtons = ({
           name='unfriend-btn'
           color='btn-warning'
           buttonCallback={muteVideo}>
-          <Icon className='' icon='videocam_off' color='neutral' size='21px' />
+          <Icon className='' icon='videocam' color='neutral' size='21px' />
         </Button>
       );
     }
