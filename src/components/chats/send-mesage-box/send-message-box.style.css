@@ -43,7 +43,7 @@
      height: 53px;
      overflow-x: hidden;
      padding: 15px;
-     margin-left: 10px;
+     margin-left: 0px;
  }
 
  textarea#message:focus {

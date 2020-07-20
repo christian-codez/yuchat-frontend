@@ -172,13 +172,13 @@ const Message = ({
           {message.sender.id === currentUser.id ? (
             <Fragment>
               <Icon icon='call_made' color='neutral' size='14px' />
-              <span className='call-leading-text'> You started a call @ </span>
+              <span className='call-leading-text'> You started a call on </span>
             </Fragment>
           ) : (
             <Fragment>
               <Icon icon='call_received' color='neutral' size='14px' />
               <span className='call-leading-text'>
-                {message.sender.firstname} started a call @
+                {message.sender.firstname} started a call on
               </span>
             </Fragment>
           )}

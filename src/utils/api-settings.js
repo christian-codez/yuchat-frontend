@@ -1,5 +1,5 @@
-//export const CHAT_API_URL = 'https://yuchatapi.herokuapp.com';
-export const CHAT_API_URL = 'http://localhost:4000';
+export const CHAT_API_URL = 'https://yuchatapi.herokuapp.com';
+//export const CHAT_API_URL = 'http://localhost:4000';
 
 export const BuildImageURL = path => {
   if (!path) {

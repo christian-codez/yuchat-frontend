@@ -7,7 +7,6 @@ import {
   notifyTypingStoppedAction,
   clearMessageRequestStatus,
 } from '../../../redux/actions/chat.actions';
-import Icon from '../../../shared/icon/Icon';
 
 const SendMessageBox = ({
   chattingWith,
@@ -96,7 +95,7 @@ const SendMessageBox = ({
           </div>
         )}
       </div>
-      <p className='message-status'>{RequestStatus}</p>
+      {/* <p className='message-status'>{RequestStatus}</p> */}
     </div>
   );
 };

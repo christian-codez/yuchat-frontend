@@ -111,10 +111,10 @@ small.message-time {
 }
 
 .call-message {
-    background-color: #8d4e00;
+    background-color: #515151;
     margin: 7px auto;
     border-radius: 8px;
-    padding: 5px;
+    padding: 5px 23px;
     color: #fff;
     display: inline-block;
 }
