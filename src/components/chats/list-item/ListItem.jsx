@@ -144,7 +144,7 @@ const ListItem = props => {
         id={user.id}
         className='chat-listing-single show-on-medium hide-on-med-and-up'>
         <div className='user-avater'>
-          {usersOnline && usersOnline.includes(message.sender.id) ? (
+          {friendOnline(message) ? (
             <span className='online-icon'> </span>
           ) : (
             <span className='offline-icon'> </span>
